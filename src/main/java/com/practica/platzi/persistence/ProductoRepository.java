@@ -5,13 +5,17 @@ import com.practica.platzi.domain.repository.ProductRepository;
 import com.practica.platzi.persistence.crud.ProductoCrudRepository;
 import com.practica.platzi.persistence.entity.Producto;
 import com.practica.platzi.persistence.mapper.ProductMapper;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import java.util.List;
 import java.util.Optional;
 
 @Repository
 public class ProductoRepository implements ProductRepository {
+
+    @Autowired
     private ProductoCrudRepository productoCrudRepository;
+    @Autowired
     private ProductMapper mapper;
 
     @Override
@@ -27,8 +31,8 @@ public class ProductoRepository implements ProductRepository {
     }
 
     @Override
-    public Optional<List<Product>> getScarseProducts(int quantity) {
-        Optional<List<Producto>> productos = productoCrudRepository.findByCantidadStockLessThanAndEstado(quantity);
+    public Optional<List<Product>> getScarseProducts(int quantity, boolean active) {
+        Optional<List<Producto>> productos = productoCrudRepository.findByCantidadStockLessThanAndEstado(quantity, active);
         return productos.map(prods -> mapper.toProducts(prods));
     }
 

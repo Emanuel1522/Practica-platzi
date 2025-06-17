@@ -29,7 +29,7 @@ public class Compra {
     // Relaciones
 
     @ManyToOne
-    @JoinColumn(name = "id_cliente")
+    @JoinColumn(name = "id_cliente", insertable = false, updatable = false)
     private Cliente cliente;
 
     @OneToMany(mappedBy = "compra")
@@ -37,6 +37,22 @@ public class Compra {
 
 
     //GETTERS Y SETTERS
+
+    public Cliente getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
+    }
+
+    public List<ComprasProducto> getProductos() {
+        return productos;
+    }
+
+    public void setProductos(List<ComprasProducto> productos) {
+        this.productos = productos;
+    }
 
     public Integer getIdCompra() {
         return idCompra;

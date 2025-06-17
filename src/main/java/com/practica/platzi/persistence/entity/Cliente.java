@@ -22,16 +22,22 @@ public class Cliente {
     @Column(name = "correo_electronico")
     private String correoElectronico;
 
+
+    // Relaciones
+
     @OneToMany(mappedBy = "cliente")
     private List<Compra> compras;
 
 
-    // Relaciones
-
-    //
-
-
     //GETTERS Y SETTERS
+
+    public List<Compra> getCompras() {
+        return compras;
+    }
+
+    public void setCompras(List<Compra> compras) {
+        this.compras = compras;
+    }
 
     public Integer getId() {
         return id;

@@ -3,7 +3,7 @@ package com.practica.platzi.domain;
 
 public class Product {
 
-    private int productId;
+    private Integer productId;
 
     private String name;
 
@@ -20,11 +20,11 @@ public class Product {
 
     // GETTERS Y SETTERS
 
-    public int getProductId() {
+    public Integer getProductId() {
         return productId;
     }
 
-    public void setProductId(int productId) {
+    public void setProductId(Integer productId) {
         this.productId = productId;
     }
 

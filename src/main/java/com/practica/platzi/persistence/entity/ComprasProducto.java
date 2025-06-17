@@ -29,6 +29,22 @@ public class ComprasProducto {
 
     //GETTES Y SETTERS
 
+    public Compra getCompra() {
+        return compra;
+    }
+
+    public void setCompra(Compra compra) {
+        this.compra = compra;
+    }
+
+    public Producto getProducto() {
+        return producto;
+    }
+
+    public void setProducto(Producto producto) {
+        this.producto = producto;
+    }
+
     public Boolean getEstado() {
         return estado;
     }
