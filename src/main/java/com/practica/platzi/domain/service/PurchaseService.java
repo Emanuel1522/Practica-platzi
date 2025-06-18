@@ -1,6 +1,6 @@
 package com.practica.platzi.domain.service;
 
-import com.practica.platzi.domain.Purchase;
+import com.practica.platzi.domain.model.Purchase;
 import com.practica.platzi.domain.repository.PurchaseRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

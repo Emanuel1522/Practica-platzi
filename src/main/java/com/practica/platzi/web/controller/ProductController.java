@@ -1,6 +1,6 @@
 package com.practica.platzi.web.controller;
 
-import com.practica.platzi.domain.Product;
+import com.practica.platzi.domain.model.Product;
 import com.practica.platzi.domain.service.ProductService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;

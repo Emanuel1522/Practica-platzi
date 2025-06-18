@@ -1,4 +1,4 @@
-package com.practica.platzi.domain;
+package com.practica.platzi.domain.model;
 
 public class Category {
 

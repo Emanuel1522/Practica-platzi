@@ -1,4 +1,4 @@
-package com.practica.platzi.domain;
+package com.practica.platzi.domain.model;
 
 import java.time.LocalDateTime;
 import java.util.List;

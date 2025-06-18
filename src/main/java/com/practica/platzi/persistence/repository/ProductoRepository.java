@@ -1,6 +1,6 @@
-package com.practica.platzi.persistence;
+package com.practica.platzi.persistence.repository;
 
-import com.practica.platzi.domain.Product;
+import com.practica.platzi.domain.model.Product;
 import com.practica.platzi.domain.repository.ProductRepository;
 import com.practica.platzi.persistence.crud.ProductoCrudRepository;
 import com.practica.platzi.persistence.entity.Producto;

@@ -1,6 +1,6 @@
 package com.practica.platzi.domain.repository;
 
-import com.practica.platzi.domain.Product;
+import com.practica.platzi.domain.model.Product;
 import java.util.List;
 import java.util.Optional;
 

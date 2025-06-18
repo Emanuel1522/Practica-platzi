@@ -1,6 +1,6 @@
 package com.practica.platzi.domain.service;
 
-import com.practica.platzi.domain.Product;
+import com.practica.platzi.domain.model.Product;
 import com.practica.platzi.domain.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

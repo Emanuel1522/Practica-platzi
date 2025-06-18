@@ -1,6 +1,6 @@
 package com.practica.platzi.persistence.mapper;
 
-import com.practica.platzi.domain.Category;
+import com.practica.platzi.domain.model.Category;
 import com.practica.platzi.persistence.entity.Categoria;
 import org.mapstruct.InheritInverseConfiguration;
 import org.mapstruct.Mapper;

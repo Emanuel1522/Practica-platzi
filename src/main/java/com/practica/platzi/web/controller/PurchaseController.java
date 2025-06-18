@@ -1,6 +1,6 @@
 package com.practica.platzi.web.controller;
 
-import com.practica.platzi.domain.Purchase;
+import com.practica.platzi.domain.model.Purchase;
 import com.practica.platzi.domain.service.PurchaseService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
